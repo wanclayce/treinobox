@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadros Coloridos</title>
+    <style>
+        .quadro.azul {
+            color: white; /* Define a cor do texto */
+            padding: 50px; /* Adiciona espaço dentro do quadro */
+            margin: 5px; /* Adiciona espaço fora do quadro */
+            border-radius: 10px; /* Arredonda os cantos do quadro */
+            text-align: left; /* Alinha o texto à esquerda */
+            width: 1000px; /* Largura fixa para os quadros */
+            height: 30px; /* altura */
+            background-color: rgb(66, 66, 211);
+        }
+
+        .quadro.verde {
+            color: white; /* Define a cor do texto */
+            padding: 70px; /* Adiciona espaço dentro do quadro */
+            margin: 5px; /* Adiciona espaço fora do quadro */
+            border-radius: 10px; /* Arredonda os cantos do quadro */
+            text-align: left; /* Alinha o texto à esquerda */
+            width: 60px; /* Largura fixa para os quadros */
+            height: 180px; /* altura */
+            background-color: red;
+        }
+
+        .quadro.vermelho {
+            color: white; /* Define a cor do texto */
+            padding: 100px; /* Adiciona espaço dentro do quadro */
+            margin: 5px; /* Adiciona espaço fora do quadro */
+            border-radius: 10px; /* Arredonda os cantos do quadro */
+            text-align: left; /* Alinha o texto à esquerda */
+            width: 700px; /* Largura fixa para os quadros */
+            height: 120px; /* altura */
+            background-color: rgb(0, 128, 0);
+        }
+
+        .linha {
+            display: flex;
+            justify-content: center; /* Centraliza os quadros horizontalmente */
+        }
+
+        .linha.duplo {
+            display: flex;
+            justify-content: center; /* Centraliza os quadros vermelhos e verdes */
+        }
+
+        .container-pequenos-quadros {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px; /* Espaçamento entre os pequenos quadros */
+        }
+
+        .pequeno-quadro {
+            background-color: rgb(18, 132, 54); /* Cor padrão para pequenos quadros */
+            color: black;
+            padding: 5px;
+            margin: 2px;
+            width: calc(33.33% - 10px); /* Três quadros por linha, com margem */
+            box-sizing: border-box;
+            text-align: left;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="linha">
+        <div class="quadro azul">
+            <p>header</p>
+        </div>
+    </div>
+    <div class="linha duplo">
+        <div class="quadro vermelho">
+            <p>Main.</p>
+            <div class="container-pequenos-quadros">
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+                <div class="pequeno-quadro">Item</div>
+            </div>
+        </div>
+        <div class="quadro verde">
+            <p>Sidebar.</p>
+        </div>
+    </div>
+    <div class="linha">
+        <div class="quadro azul">
+            <p>Footer.</p>
+        </div>
+    </div>
+</body>
+</html>
